@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connect User List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body class="bg-white min-h-screen flex flex-col items-center justify-center p-4">
+  <div class="w-full max-w-3xl flex border border-gray-300 rounded-md overflow-hidden">
+    <aside class="bg-gray-900 text-white w-40 flex flex-col py-4 px-3 space-y-3">
+      <h2 class="font-bold text-sm mb-2">Connect to fika</h2>
+      <button
+        class="flex items-center space-x-2 bg-gray-700 rounded px-3 py-1 text-xs font-semibold"
+        aria-current="page"
+      >
+        <i class="fas fa-user text-xs"></i>
+        <span>User</span>
+      </button>
+      <button class="flex items-center space-x-2 text-gray-300 hover:text-white text-xs font-semibold px-3 py-1 rounded">
+        <i class="fas fa-key text-xs"></i>
+        <span>Hak Akses</span>
+      </button>
+      <button class="flex items-center space-x-2 text-gray-300 hover:text-white text-xs font-semibold px-3 py-1 rounded">
+        <i class="fas fa-sign-out-alt text-xs"></i>
+        <span>Logout</span>
+      </button>
+    </aside>
+    <main class="flex-1 p-4">
+      <form class="mb-4">
+        <input
+          type="text"
+          placeholder="Cari user"
+          class="w-full border border-gray-300 rounded-md px-3 py-1 text-xs text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400"
+        />
+      </form>
+      <ul class="space-y-2 text-xs text-gray-900">
+        <li class="border border-gray-300 rounded-md p-2 flex justify-between items-center">
+          <div>
+            <p class="font-bold leading-tight">Rahmat Saudi Al Fathir As</p>
+            <p class="text-gray-600 truncate max-w-[14rem]">
+              rahmat.saudi@unram.ac.id
+            </p>
+            <span class="inline-block bg-gray-800 text-white rounded px-1 mt-1">User</span>
+          </div>
+          <span class="font-semibold">Aktif</span>
+        </li>
+        <li class="border border-gray-300 rounded-md p-2 flex justify-between items-center">
+          <div>
+            <p class="font-bold leading-tight">Lintang</p>
+            <p class="text-gray-600 truncate max-w-[14rem]">lintang@user.unram.ac.id</p>
+            <span class="inline-block bg-gray-800 text-white rounded px-1 mt-1">User</span>
+          </div>
+          <span class="font-semibold">Aktif</span>
+        </li>
+        <li class="border border-gray-300 rounded-md p-2 flex justify-between items-center">
+          <div>
+            <p class="font-bold leading-tight">Shafira</p>
+            <p class="text-gray-600 truncate max-w-[14rem]">shafira@unram.ac.id</p>
+            <span class="inline-block bg-gray-800 text-white rounded px-1 mt-1">User</span>
+          </div>
+          <span class="font-semibold">Aktif</span>
+        </li>
+        <li class="border border-gray-300 rounded-md p-2 flex justify-between items-center">
+          <div>
+            <p class="font-bold leading-tight">Lebah Ganteng</p>
+            <p class="text-gray-600 truncate max-w-[14rem]">lebahganteng@informatika.ac.id</p>
+            <span class="inline-block bg-gray-800 text-white rounded px-1 mt-1">User</span>
+          </div>
+          <span class="font-semibold">Suspended</span>
+        </li>
+      </ul>
+    </main>
+  </div>
+  <button
+    aria-label="Add user"
+    class="fixed bottom-6 right-6 bg-gray-300 border border-gray-400 rounded px-2 py-1 text-xs font-semibold"
+  >
+    +
+  </button>
+</body>
+</html>
